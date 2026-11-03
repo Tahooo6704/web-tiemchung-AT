@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacxin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/Vacxin.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="TrangChu.html" class="brand">
+                <i class="fa-solid fa-shield-virus"></i>
+                <span>An Tâm Vaccine</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Điều hướng chính">
+                <a class="active" href="TrangChu.html">Trang chủ</a>
+                <a href="#">Vắc Xin</a>
+                <a href="#">Đặt lịch</a>   
+                <a href="#">Hồ sơ bệnh nhân</a>
+                <a href="#">Liên hệ</a>
+            </nav>
+
+            <div class="header-tools">
+                <div class="hotline">
+                    <small>hotline</small>
+                    <strong>1900 9999</strong>
+                </div>
+                <a class="button button-primary" href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Đăng nhập
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <section class="hero-banner">
+                <h1>Chủ động phòng bệnh cùng vắc xin phù hợp</h1>
+                <p>Tra cứu danh mục, tham khảo giá và đặt hẹn nhanh chóng tại An Tâm Vaccine.</p>
+            </section>
+<!--             
+            tra cuu nhanh -->
+            <section class="quick-search" aria-labelledby="search-title">
+            <div class="quick-search-body">
+                <div class="eyebrow">TRA CỨU NHANH</div>
+                <h2 id="search-title">Tìm kiếm thuốc và vắc xin</h2>
+                <p>Nhập tên sản phẩm hoặc bệnh cần phòng ngừa để tìm thông tin phù hợp.</p>
+                <div class="quick-search-form">
+                <label class="search-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="vaccine-search" type="search" placeholder="Ví dụ: HPV, cúm, viêm gan B...">
+                </label>
+                <select id="product-type" aria-label="Loại sản phẩm">
+                    <option value="all">Tất cả sản phẩm</option>
+                    <option value="vaccine">Vắc xin</option>
+                    <option value="package">Gói vắc xin</option>
+                    <option value="antibody">Kháng thể đơn dòng</option>
+                </select>
+                <button class="btn-primary" type="button" id="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i> 
+                    Tìm kiếm
+                </button>
+                </div>
+                <div class="quick-tags">
+                <span>Tìm nhanh:</span>
+                <button type="button" data-search-term="HPV">HPV</button>
+                <button type="button" data-search-term="Cúm">Cúm</button>
+                <button type="button" data-search-term="Phế cầu">Phế cầu</button>
+                <button type="button" data-search-term="Viêm gan B">Viêm gan B</button>
+                </div>
+            </div>
+            <div class="quick-search-icon" aria-hidden="true">
+                <i class="fa-solid fa-pills"></i>
+            </div>
+            </section>
+
+            <h2 class="section-title">Danh mục vắc xin</h2>
+
+            <div class="category-tabs" role="tablist">
+                <button class="category-tab active" type="button" data-tab="benh">Vắc xin phòng bệnh</button>
+                <button class="category-tab" type="button" data-tab="goi">Gói vắc xin</button>
+            </div>
+
+            <!-- TAB: VẮC XIN PHÒNG BỆNH -->
+            <div id="tab-benh">
+                <div class="category-grid" id="category-grid">
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-ribbon"></i></span>
+                        <span class="label">Vắc xin phòng Ung thư do HPV</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-syringe"></i></span>
+                        <span class="label">Vắc xin 6 trong 1</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-lungs"></i></span>
+                        <span class="label">Vắc xin phòng bệnh do Phế cầu</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-mosquito"></i></span>
+                        <span class="label">Vắc xin phòng Sốt xuất huyết</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-prescription-bottle"></i></span>
+                        <span class="label">Vắc xin phòng Tiêu chảy do Rota virus</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-virus"></i></span>
+                        <span class="label">Vắc xin phòng Sởi Quai bị Rubella</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-virus-covid"></i></span>
+                        <span class="label">Vắc xin phòng Thủy đậu</span>
+                    </button>
+                    <button class="category-card" type="button">
+                        <span class="thumb"><i class="fa-solid fa-shield-virus"></i></span>
+                        <span class="label">Vắc xin phòng Bạch hầu Ho gà Uốn ván</span>
+                    </button>
+                </div>
+                <div class="center">
+                    <button class="link-button" type="button" id="toggle-categories">Xem tất cả danh mục <i class="fa-solid fa-angles-down"></i></button>
+                </div>
+
+                <section>
+                    <aside class="filters">
+                        <div class="filters-title"><i class="fa-solid fa-sliders"></i>Bộ lọc vắc xin</div>
+                        <div id="filter-groups">
+                            <div class="filter-group">
+                                <button class="filter-head" type="button">
+                                    <span>Độ tuổi</span>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <div class="filter-body">
+                                    <div class="filter-options">
+                                        <label class="filter-option all"><input type="checkbox" checked><span>Tất cả</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Từ 0 tuổi đến &lt; 6 tháng tuổi</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Từ 6 tháng đến &lt; 12 tháng tuổi</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Từ 12 tháng đến &lt; 24 tháng tuổi</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Từ 2 tuổi đến &lt; 9 tuổi</span></label>
+                                    </div>
+                                    <button class="filter-expand" type="button">Xem thêm (3) <i class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <button class="filter-head" type="button">
+                                    <span>Phòng bệnh</span>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <div class="filter-body">
+                                    <div class="filter-options">
+                                        <label class="filter-option all"><input type="checkbox" checked><span>Tất cả</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Phòng bệnh ung thư do HPV 9 chủng</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Phòng Thủy đậu</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Phòng bệnh ung thư do HPV 4 chủng</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Phòng Viêm gan B</span></label>
+                                    </div>
+                                    <button class="filter-expand" type="button">Xem thêm (25) <i class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <button class="filter-head" type="button">
+                                    <span>Nơi sản xuất</span>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <div class="filter-body">
+                                    <div class="filter-search">
+                                        <input type="text" placeholder="Tìm theo quốc gia">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    <div class="filter-options">
+                                        <label class="filter-option all"><input type="checkbox" checked><span>Tất cả</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Ấn Độ</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Bỉ</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Canada</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>Cuba</span></label>
+                                    </div>
+                                    <button class="filter-expand" type="button">Xem thêm (9) <i class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <button class="filter-head" type="button">
+                                    <span>Số liều theo phác đồ</span>
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                                <div class="filter-body">
+                                    <div class="filter-options">
+                                        <label class="filter-option all"><input type="checkbox" checked><span>Tất cả</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>1</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>2</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>3</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>4</span></label>
+                                        <label class="filter-option"><input type="checkbox"><span>5</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="outline-button" type="button" data-reset-filters>Xoá tất cả bộ lọc</button>
+                    </aside>
+
+                    <div class="products">
+                        <div class="products-bar">
+                            <div>
+                                <h3>Danh sách vắc xin</h3>
+                                <div class="result-line" id="result-line">14 sản phẩm phù hợp · hiển thị 8</div>
+                            </div>
+                            <label class="sort-box">
+                                <span>Sắp xếp:</span>
+                                <select id="sort-products">
+                                    <option value="hot">Được quan tâm</option>
+                                    <option value="asc">Giá thấp đến cao</option>
+                                    <option value="desc">Giá cao đến thấp</option>
+                                    <option value="az">Tên A → Z</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <!-- de mau vac xin tam thoi -->
+                        <div class="chips" id="active-chips"></div>
+                        <div class="product-grid" id="product-grid">
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-shield-virus" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Bỉ</div>
+                                    <div class="product-name">Vắc xin Nimenrix</div>
+                                    <div class="product-disease">Phòng bệnh Não mô cầu ACWY</div>
+                                    <div class="product-bottom">
+                                        <div class="price">1.750.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-lungs-virus" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Bỉ</div>
+                                    <div class="product-name">Vắc xin Abrysvo</div>
+                                    <div class="product-disease">Phòng bệnh virus hợp bào hô hấp - RSV</div>
+                                    <div class="product-bottom">
+                                        <div class="price">4.840.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-lungs-virus" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Bỉ</div>
+                                    <div class="product-name">Vắc xin Arexvy</div>
+                                    <div class="product-disease">Phòng bệnh virus hợp bào hô hấp - RSV</div>
+                                    <div class="product-bottom">
+                                        <div class="price">5.350.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-baby" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Hoa Kỳ</div>
+                                    <div class="product-name">Kháng thể đơn dòng Beyfortus</div>
+                                    <div class="product-disease">Phòng bệnh virus hợp bào hô hấp - RSV</div>
+                                    <div class="product-bottom">
+                                        <div class="price">Liên hệ</div>
+                                        <a class="soft-button" href="DatLichTiem.html">Yêu cầu tư vấn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-shield-virus" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Hoa Kỳ</div>
+                                    <div class="product-name">Vắc xin MenQuadfi</div>
+                                    <div class="product-disease">Phòng bệnh Não mô cầu ACWY</div>
+                                    <div class="product-bottom">
+                                        <div class="price">1.840.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-virus" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Hoa Kỳ</div>
+                                    <div class="product-name">Vắc xin Proquad</div>
+                                    <div class="product-disease">Phòng Sởi Quai bị Rubella và Thủy đậu</div>
+                                    <div class="product-bottom">
+                                        <div class="price">2.390.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-head-side-cough" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Hà Lan</div>
+                                    <div class="product-name">Vắc xin Influvac Tetra</div>
+                                    <div class="product-disease">Phòng Cúm mùa</div>
+                                    <div class="product-bottom">
+                                        <div class="price">333.000đ<span> / Ống</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <i class="fa-solid fa-ribbon" aria-hidden="true"></i>
+                                    <label class="compare-option"><input type="checkbox">So sánh</label>
+                                </div>
+                                <div class="product-info">
+                                    <div class="origin"><i class="fa-solid fa-location-dot"></i>Hoa Kỳ</div>
+                                    <div class="product-name">Vắc xin Gardasil 9</div>
+                                    <div class="product-disease">Phòng Ung thư cổ tử cung do HPV</div>
+                                    <div class="product-bottom">
+                                        <div class="price">2.950.000đ<span> / Liều</span></div>
+                                        <a class="soft-button" href="DatLichTiem.html">Đặt hẹn</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <button class="more-button" type="button" id="more-button">
+                            Xem thêm vắc xin <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="empty-state" id="empty-state" hidden>
+                            <strong>Không tìm thấy vắc xin phù hợp</strong>
+                            <p>Thử bỏ bớt bộ lọc hoặc tìm với từ khoá khác.</p>
+                            <button class="btn-primary" type="button" data-reset-filters>Xoá bộ lọc</button>
+                        </div>
+                    </div>
+                
+                </section>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <i class="fa-solid fa-shield-virus"></i>
+                    An Tâm Vaccine
+                </div>
+                <p>Đồng hành cùng bạn và gia đình trên hành trình bảo vệ sức khỏe chủ động.</p>
+            </div>
+            <div>
+                <h3>Liên kết nhanh</h3>
+                <a href="TrangChu.html">Trang chủ</a>
+                <a href="Vacxin.html">Vắc xin &amp; Bảng giá</a>
+                <a href="DatLichTiem.html">Đặt lịch</a>
+                <a href="HoSoGiaDinh.html">Hồ sơ bệnh nhân</a>
+            </div>
+            <div>
+                <h3>Hỗ trợ</h3>
+                <a href="#contact">Câu hỏi thường gặp</a>
+                <a href="#contact">Chính sách bảo mật</a>
+                <a href="#contact">Điều khoản sử dụng</a>
+            </div>
+            <div>
+                <h3>Liên hệ</h3>
+                <p><i class="fa-solid fa-phone"></i> 1900 1234</p>
+                <p><i class="fa-solid fa-envelope"></i> support@antamvaccine.vn</p>
+                <p><i class="fa-solid fa-location-dot"></i> Hệ thống trung tâm trên toàn quốc</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 An Tâm Vaccine. Bảo lưu mọi quyền.</div>
+    </footer>
+</body>
+</html>
